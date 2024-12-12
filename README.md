@@ -16,14 +16,6 @@ The primary focus of this project is:
 
 ---
 
-## File Structure
-The project is organized as follows:
-kitchenware-classification/ ├── README.md # Project overview and instructions ├── requirements.txt # List of Python dependencies ├── src/ # Source code for models and utilities │ 
-├── data_preprocessing.py # Preprocessing and data augmentation │ ├── cnn_model.py # CNN model (includes callbacks and training logic) │ ├── ann_model.py # ANN model definition and callbacks │ 
-├── transfer_learning.py # VGG16-based transfer learning model │ ├── real_time_detection.py # Real-time detection with OpenCV ├── examples/ # Example scripts for training and evaluation │ 
-├── train_ann_with_callbacks.py # Training script for ANN │ ├── train_vgg16_with_callbacks.py # Training script for VGG16 │ ├── evaluate_model.py # Evaluation script for trained models ├── datasets/ # Placeholder for datasets │ 
-├── train/ # Training images (organized into subfolders by class) │ ├── validation/ # Validation images (organized into subfolders by class) │ ├── test/ # Testing images (organized into subfolders by class)
-
 ## Installation
 ### Prerequisites
 - Python 3.7 or higher
@@ -57,7 +49,7 @@ datasets/
 │   ├── spoons/
 
 Training a Model:
-python /train_ann_with_callbacks.py
+python /ann_model.py
 python /cnn_model.py
 python /train_vgg16_with_callbacks.py
 
